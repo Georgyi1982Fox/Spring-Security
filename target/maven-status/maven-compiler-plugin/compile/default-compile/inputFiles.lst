@@ -1,0 +1,15 @@
+/home/georg/Рабочий стол/spring crud/src/main/java/web/model/User.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/config/WebConfig.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/config/handler/LoginSuccessHandler.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/dao/UserHibernateDAO.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/config/AppInit.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/service/CustomUserDetails.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/controller/UserController.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/controller/LoginController.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/service/UserServiceImp.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/config/SecurityConfig.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/dao/UserDAO.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/dao/RoleDAO.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/config/SpringSecurityInitializer.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/model/Role.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/service/UserService.java
