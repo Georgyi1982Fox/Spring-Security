@@ -11,7 +11,7 @@
 <body>
 <div align="center">
     <h1>Edit User</h1>
-    <form:form action="updated" method="post" modelAttribute="userEdit">
+    <form:form action="/admin/edit" method="post" modelAttribute="userEdit">
         <table>
             <form:hidden path="id"/>
             <tr>
@@ -29,10 +29,11 @@
             <tr>
                 <td colspan="2" align="center"><input type="submit" value="Save"></td>
             </tr>
-            <a href="/userList">List All Users</a>
+            <a href="/admin/list">List All Users</a>
         </table>
     </form:form>
-</div>
+      </div>
 
-</body>
+   </body>
+
 </html>

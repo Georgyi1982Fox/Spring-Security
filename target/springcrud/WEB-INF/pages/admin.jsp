@@ -13,8 +13,7 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
     <h2>Users List</h2>
 
-
-    <h3><a href="/newUser">New User</a></h3>
+    <h3><a href="/registrationPage">New User</a></h3>
     <table border="1" cellpadding="5">
         <tr>
             <th>Id</th>
@@ -30,8 +29,8 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
                 <td>${user.password}</td>
                 <td>${user.email}</td>
                 <td>
-                    <a href="/edit?id=${user.id}">Edit</a>
-                    <a href="/delete?id=<c:out value='${user.id}' />">Delete</a>
+                    <a href="/admin/edit?id=${user.id}">Edit</a>
+                    <a href="/admin/deleteUser?id=<c:out value='${user.id}' />">Delete</a>
                 </td>
             </tr>
         </c:forEach>

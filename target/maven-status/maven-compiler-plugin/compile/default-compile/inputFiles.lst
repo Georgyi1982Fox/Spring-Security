@@ -3,8 +3,8 @@
 /home/georg/Рабочий стол/spring crud/src/main/java/web/config/handler/LoginSuccessHandler.java
 /home/georg/Рабочий стол/spring crud/src/main/java/web/dao/UserHibernateDAO.java
 /home/georg/Рабочий стол/spring crud/src/main/java/web/config/AppInit.java
-/home/georg/Рабочий стол/spring crud/src/main/java/web/service/CustomUserDetails.java
 /home/georg/Рабочий стол/spring crud/src/main/java/web/controller/UserController.java
+/home/georg/Рабочий стол/spring crud/src/main/java/web/service/MyUserDetailService.java
 /home/georg/Рабочий стол/spring crud/src/main/java/web/controller/LoginController.java
 /home/georg/Рабочий стол/spring crud/src/main/java/web/service/UserServiceImp.java
 /home/georg/Рабочий стол/spring crud/src/main/java/web/config/SecurityConfig.java

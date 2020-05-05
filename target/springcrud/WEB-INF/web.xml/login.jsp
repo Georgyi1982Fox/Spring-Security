@@ -21,27 +21,25 @@
 </center>
 
 <div align="center">
-
+    <a href="/registrationPage">Register</a>
     <form action="/login" method="post">
 
         <table border="1" cellpadding="5">
 
             <h2>Authorization Page</h2>
             <p><b>Login:</b><br>
-                <input type="text" name ="login" size="30"></p>
+                <input type="text" name ="username" size="30"></p>
             <p><b>Password:</b><br>
                 <input type="password" name ="password" size="30"></p>
             <p><input type="submit" value="ОK"
             />
-
-
         </table>
 
-    </form>
+      </form>
 
-</div>
+    </div>
 
-</body>
+  </body>
 
 </html>
 
