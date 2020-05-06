@@ -59,7 +59,6 @@ public class WebConfig implements WebMvcConfigurer {
         return transactionManager;
     }
 
-
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/WEB-INF/pages/**").addResourceLocations("/pages/");
@@ -74,5 +73,4 @@ public class WebConfig implements WebMvcConfigurer {
 
         return resolver;
     }
-
 }

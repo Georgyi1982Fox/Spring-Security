@@ -13,10 +13,14 @@
 <body>
 
 <div align="center">
-    <h1>Hello ${user.username}</h1>
-    <h2>your login is ${user.username}</h2>
-    <h2>your password is ${user.password}</h2>
+    <h1>Hello"${pageContext.request.remoteUser}" </h1>
+    <h2>your login is "${pageContext.request.remoteUser}"</h2>
+    <h2>your password is  "${pageContext.request.remoteUser}"</h2>
+
+    <a href="/registrationPage">Registration</a>
+    <a href="/logout" > Logout</a>
+
  </div>
-<a href="/registrationPage">Registration</a>
+
 </body>
 </html>

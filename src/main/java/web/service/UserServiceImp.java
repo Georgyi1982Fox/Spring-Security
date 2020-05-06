@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import web.model.Role;
 import web.model.User;
-
 import java.sql.SQLException;
 import java.util.*;
 
@@ -33,7 +32,6 @@ public class UserServiceImp implements UserDetailsService, UserService {
         Set<Role> roles = new HashSet<>();
         roles.add(new Role(1L,"ADMIN"));
         roles.add(new Role(2L, "USER"));
-
         if (user.getUsername() == null && user.getPassword() == null) {
             return false;
         } else

@@ -1,7 +1,6 @@
 package web.dao;
 
 import org.hibernate.Session;
-//import web.model.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.hibernate.SessionFactory;
@@ -12,7 +11,6 @@ import java.sql.SQLException;
 import java.util.List;
 @Repository
 public class UserHibernateDAO implements UserDAO {
-
     @Autowired
     private SessionFactory sessionFactory;
 
@@ -25,7 +23,6 @@ public class UserHibernateDAO implements UserDAO {
     @Override
     public void addUser(User user){
        sessionFactory.getCurrentSession().save(user);
-
     }
 
     @Override
@@ -50,7 +47,7 @@ public class UserHibernateDAO implements UserDAO {
     @Override
     public User getUserById(Long id) throws SQLException {
         User user = (User)sessionFactory.getCurrentSession().load(User.class, id);
-        User userGetById = new User(user.getId(), user.getPassword(), user.getEmail());
+        User userGetById = new User(user.getId(), user.getUsername(), user.getEmail());
         return userGetById;
     }
 

@@ -8,16 +8,10 @@ import java.util.List;
 
 public interface UserDAO {
     List<User> listAllUsers() throws SQLException;
-
     void addUser(User user) throws SQLException;
-
     void updateUser(User user) throws SQLException;
-
     User findByUsername(String username);
-
     void deleteUser(Long id) throws SQLException;
-
     User getUserById(Long id) throws SQLException;
-
     boolean validate(String name, String password) throws SQLException;
 }

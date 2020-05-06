@@ -136,6 +136,4 @@ public class User implements UserDetails {
     public void setId(Long id){
         this.id = id;
     }
-
-
 }
