@@ -48,18 +48,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .usernameParameter("username")
                 .passwordParameter("password")
                 .permitAll();
-
         http.logout()
                 .permitAll()
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                 .logoutSuccessUrl("/registrationPage")
                 .logoutUrl("/logout")
                 .and().csrf().disable();
-
         http
                 .authorizeRequests()
                 .antMatchers("/registrationPage", "/login").permitAll()
-                .antMatchers("/index").permitAll()
+                //.antMatchers("/index").permitAll()
                 .antMatchers("/admin/**").hasAuthority("ADMIN").anyRequest().authenticated()
                 .antMatchers("/user/**").hasAuthority("USER").anyRequest().authenticated();
     }

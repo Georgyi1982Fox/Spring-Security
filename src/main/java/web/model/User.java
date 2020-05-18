@@ -4,6 +4,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -23,7 +24,7 @@ public class User implements UserDetails {
     @Column(name = "email")
     private String email;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "users_roles", joinColumns = {@JoinColumn(name = "users_id")},
             inverseJoinColumns = {@JoinColumn(name = "roles_id")})
     private Set<Role> roles;
@@ -35,6 +36,22 @@ public class User implements UserDetails {
         this.userName = name;
         this.password = password;
         this.email = email;
+    }
+
+    public User(Long id, String name, String password, String email, Set<Role>roles){
+        this.id = id;
+        this.userName = name;
+        this.password = password;
+        this.email = email;
+        this.roles = roles;
+    }
+
+    public User(Long id, String name, String email, Set<Role> roles){
+        this.id = id;
+        this.userName = name;
+        this.email = email;
+        this.roles = roles;
+
     }
 
     public User(String name, String password, String email){

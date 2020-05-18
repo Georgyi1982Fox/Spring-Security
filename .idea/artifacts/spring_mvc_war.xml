@@ -9,16 +9,6 @@
     </properties>
     <root id="archive" name="springcrud.war">
       <element id="artifact" artifact-name="spring_mvc:war exploded" />
-      <element id="directory" name="WEB-INF">
-        <element id="directory" name="classes">
-          <element id="jpa-descriptors" facet="spring_mvc/jpa/JPA" />
-        </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Java EE 6-Java EE 6" />
-          <element id="library" level="project" name="Spring Security-5.2.1" />
-        </element>
-      </element>
-      <element id="artifact" artifact-name="s-mvc" />
     </root>
   </artifact>
 </component>

@@ -22,6 +22,7 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
             <th>Password</th>
             <th>Email</th>
             <th>Action</th>
+            <th>Roles</th>
         </tr>
         <c:forEach items="${allUsers}" var="user">
             <tr>
@@ -29,12 +30,11 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
                 <td>${user.username}</td>
                 <td>${user.password}</td>
                 <td>${user.email}</td>
+                <td>${user.roles}</td>
                 <td>
                     <a href="/admin/edit?id=${user.id}">Edit</a>
                     <a href="/admin/deleteUser?id=<c:out value='${user.id}' />">Delete</a>
 
-
-                </td>
             </tr>
         </c:forEach>
     </table>

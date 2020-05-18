@@ -27,11 +27,19 @@ public class LoginController {
         return "registrationPage";
     }
 
-    @RequestMapping(value="/registrationPage", method=RequestMethod.POST)
-    public String newUserSubmit(@ModelAttribute("user") User user) throws SQLException {
-        userService.addUser(user);
-        return "redirect:/login";
-        }
+    @RequestMapping(value = "/registrationPage", method = RequestMethod.POST)
+    public String newUserSubmit(@ModelAttribute("user") User user) throws Exception {
+        User user1 = userService.findUserByUserName(user.getUsername());
+        if (user.getUsername().equals("") && user.getPassword().equals("")) {
+            return "redirect:/login";
+        }else
+            if(user1 != null){
+                return "redirect:/login";
+            }else {
+                userService.addUser(user);
+            }
+            return "redirect:/login";
+    }
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String loginPage() {

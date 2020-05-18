@@ -11,8 +11,6 @@
 <div align="center">
     <h1>Edit User</h1>
     <form:form action="/admin/edit" method="post" modelAttribute="userEdit">
-        <input type="hidden" name="_method" value="put">
-
         <table>
             <form:hidden path="id"/>
             <tr>
@@ -21,12 +19,14 @@
             </tr>
             <tr>
                 <td>Password:</td>
-                <td><form:input path="password" /></td>
+                <td><form:input path="password"/></td>
             </tr>
             <tr>
                 <td>Email:</td>
                 <td><form:input path="email" /></td>
             </tr>
+                 <td>Roles:</td>
+            <td><form:input path="roles" /></td>
             <tr>
 
                 <td colspan="2" align="center"><input type="submit" value="Save"></td>

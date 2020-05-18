@@ -19,12 +19,14 @@
             </tr>
             <tr>
                 <td>Password:</td>
-                <td><form:input path="password" /></td>
+                <td><form:input path="password"/></td>
             </tr>
             <tr>
                 <td>Email:</td>
                 <td><form:input path="email" /></td>
             </tr>
+                 <td>Roles:</td>
+            <td><form:input path="roles" /></td>
             <tr>
 
                 <td colspan="2" align="center"><input type="submit" value="Save"></td>
